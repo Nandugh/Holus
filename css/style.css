@@ -7,10 +7,11 @@ min-height: 100%;
 width: auto;
 height: auto;
 z-index: -1000;
+
 }
 section{
 	position:relative;
-	
+	background-color:#000;
 }
 .teste{
 	position:relative;
