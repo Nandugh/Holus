@@ -1,18 +1,26 @@
-.bg{
-position: fixed;
-right: 0px;
-top: 0px;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -1000;
+html, body{
+	height:100%;
+}
+body{
+		margin:0;
+		padding:0;
+		color:#000;
+	}
+header{
+		position:relative;
+		overflow:hidden;
+		height:100%;
+	}
 
-}
-section{
-	position:relative;
-	background-color:#000;
-}
-.teste{
-	position:relative;
+.video{
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		transform-origin: 0% 0% 0px;
+		transform: scale(1,1);
 }
