@@ -1,18 +1,27 @@
 html, body, header{
 	height:100%;
 }
+
 body{
 		margin:0;
 		padding:0;
 		color:#fff;
 		font-size:100%;
-		font-family: "roboto-bold"; sans-serif;
+		font-family: "Roboto", sans-serif;
+		font-weight:300;
 	}
-
-header{
-		position:relative;
-		overflow:hidden;
-	}
+ h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+	font-family: inherit;
+	margin:0;
+	padding:0;
+}
+ul{
+	padding:0px;
+}
+ul li{
+	list-style: none;
+}
 
 @font-face {
 	font-family: "quicksand-dash";
@@ -73,13 +82,6 @@ header{
 		height: auto;
 		z-index: -100;
 }
-
-#tratamentos {
-	background-color:#1DBBB5;
-	background-color: rgba(29, 187, 181, 0.9);
-
-}
-
 .chamada{
 	width:100%;
 	margin-top: 15%;
@@ -90,10 +92,10 @@ header{
 	display:block;
 }
 .font-regular{
-	font-family:"quicksand-regular", sans-serif;
 	letter-spacing:24px;
 	font-size:22px;
 	margin-bottom:10px;
+	font-weight:300;
 }
 .font-decorate{
 	font-family:"quicksand-dash", sans-serif;
@@ -120,32 +122,34 @@ header{
 	left:50%;
 	margin-left:-40px;
 }
-
-#tratamentos .titulo{
-	color: #2c3e50;
+#tratamentos {
+	background-color:#1DBBB5;
+	background-color: rgba(29, 187, 181, 0.94);
+	z-index:30;
 }
-
+#tratamentos .titulo{
+	color: rgb(1,33,42);
+}
+#tratamentos-itens{
+	padding-top:40px;
+	padding-bottom:40px;
+}
 .titulo{
 	text-transform:uppercase;
 	text-align:center;
 	font-size: 40px;
 	font-family: "roboto-bold", sans-serif;
-	padding-top: 20px;
-}
-
-ul li{
-	list-style: none;
+	padding-top: 30px;
 }
 
 .image-itens, .info-itens, .btn-info, .icon{
 	display:inline-block;
 	margin-right: -4px;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
-
 .image-itens{
-	width: 300px;
+	width: 240px;
 }
 
 .image-itens img{
@@ -157,32 +161,48 @@ ul li{
 }
 
 .info-itens {
-	width: 400px;
+	width: 280px;
+	margin-left:20px;
+}
+@media (max-width: 566px){
+	.info-itens {
+	margin-left:0px;
+	}
 }
 
 .info-itens h3{
 	text-transform: uppercase;
+	font-weight:900;
 }
 
 .info-itens h4{
 	color: #FEEB66;
+	font-weight:900;
+	padding:6px 0px;
+	font-size: 16px;
 }
 
 .info-itens p{
 	text-align:justify;
 	font-size: 14px;
+	padding-bottom:8px;
+	word-wrap: break-word;
 }
 
-.btn-info{
+
+.btn-itens{
 	padding: 10px;
-	width: 100px;
 	text-align: center;
 	border-radius: 4px;
 	background-color:rgba(00, 00, 00, 0.1);
+	font-size:16px;
+	font-weight:400;
+	cursor:pointer;
 }
 
 .icon-itens {
-	position: relative;
 	width: 50px;
-	bottom: 10px;
+	position:relative;
+	bottom:3px;
 }
+
