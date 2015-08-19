@@ -16,12 +16,20 @@ body{
 	margin:0;
 	padding:0;
 }
+.logo{
+	margin-top: 30px;
+}
+
+strong{
+	font-weight: 900;
+}
+
 ul{
 	padding:0px;
 }
 ul li{
 	list-style: none;
-}
+}z
 
 @font-face {
 	font-family: "quicksand-dash";
@@ -31,16 +39,12 @@ ul li{
 	font-family: "quicksand-regular";
 	src: url("fonts/Quicksand_Regular.otf");
 }
-@font-face {
-	font-family: "roboto-bold";
-	src: url("fonts/Roboto-Bold.ttf");
-}
 
 @media (min-width:1600px){
 
-	.container{
-	min-width:80%;
-	}
+.container{
+min-width:80%;
+}
 
 }
 
@@ -84,7 +88,7 @@ ul li{
 }
 .chamada{
 	width:100%;
-	margin-top: 15%;
+	margin-top: 10%;
 	text-shadow: 2px 2px #000;
 	text-align:center;
 }
@@ -128,6 +132,7 @@ ul li{
 	z-index:30;
 }
 #tratamentos .titulo{
+	padding-top: 30px;
 	color: rgb(1,33,42);
 }
 #tratamentos-itens{
@@ -145,7 +150,7 @@ ul li{
 .image-itens, .info-itens, .btn-info, .icon{
 	display:inline-block;
 	margin-right: -4px;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 .image-itens{
@@ -173,6 +178,14 @@ ul li{
 .info-itens h3{
 	text-transform: uppercase;
 	font-weight:900;
+	position: relative;
+}
+
+.info-itens h3 span{
+	position: relative;
+	font-size: 14px;
+	bottom: 8px;
+	display: inline-block;
 }
 
 .info-itens h4{
@@ -205,4 +218,3 @@ ul li{
 	position:relative;
 	bottom:3px;
 }
-
