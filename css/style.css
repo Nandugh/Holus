@@ -36,6 +36,11 @@ ul li{
 	src: url("fonts/Quicksand_Regular.otf");
 }
 
+@font-face{
+	font-family: "minispace";
+	src:http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js;
+}
+
 @media (min-width:1600px){
 
 .container{
@@ -45,7 +50,7 @@ min-width:80%;
 }
 
 #menu{
-	padding-top:90px;
+	padding-top:60px;
 }
 
 #menu ol{
@@ -63,8 +68,7 @@ min-width:80%;
 	border-radius:5px;
 }
 #menu a:hover{
-	text-decoration: none;
-	background-color:rgba(00,00,00, 0.5);
+	text-decoration: bold;
 }
 #menu ol > li + li::before{
 	color:#fff;
@@ -121,16 +125,104 @@ min-width:80%;
 	left:50%;
 	margin-left:-40px;
 }
-#tratamentos {
+
+audio {
+	position: absolute;
+	right: 10%;
+	bottom: 30px;
+}
+
+#institucional{
 	background-color:#1DBBB5;
 	background-color: rgba(29, 187, 181, 0.94);
 	z-index:30;
 }
-#tratamentos .titulo{
+
+.wrap-item{
+}
+
+#institucional .titulo{
+	padding-top:30px;
+	color: rgb(1,33,42);
+}
+
+.institucional-itens{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+
+#institucional h3{
+	padding: 20px;
+}
+#institucional .wrap-itens{
+	text-align: center;
+	color: #fff;
+}
+
+#image-item, #info-item{
+	display: inline-block;
+}
+
+#image-item{
+	width: 450px;
+	padding: 20px;
+	position: relative;
+}
+
+#image-item img{
+	padding:4px;
+	border-style: dashed;
+	border-width: 3px;
+	border-radius: 120px;
+	border-color: #8CDBD7;
+	margin-left: -30px;
+}
+
+#info-item{
+	position: absolute;
+	padding-top: 30px;
+	text-align: justify;
+	width: 35%;
+	margin-left: -180px;
+}
+
+#info-item h4{
+	color: #FEEB66;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+#info-item p{
+	font-size: 14px;
+
+}
+
+#estrutura{
+	background-color:#fff;
+	background-color:rgba(255, 255, 255, 0.94);
+	z-index: 30;
+}
+
+#estrutura, .titulo{
+	color:rgb(1, 33, 42);
+}
+
+#myCarousel{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 30%;
+}
+
+#especialidades {
+	background-color:#1DBBB5;
+	background-color: rgba(29, 187, 181, 0.94);
+	z-index:30;
+}
+#especialidades .titulo{
 	padding-top: 30px;
 	color: rgb(1,33,42);
 }
-.tratamentos-itens{
+.especialidades-itens{
 	padding-top:40px;
 	padding-bottom:40px;
 }
@@ -142,6 +234,9 @@ min-width:80%;
 	padding-top: 30px;
 }
 
+.wrap-itens{
+
+}
 .image-itens, .info-itens, .btn-info, .icon{
 	display:inline-block;
 	margin-right: -4px;
@@ -161,7 +256,7 @@ min-width:80%;
 }
 
 .info-itens {
-	width: 280px;
+	width: 300px;
 	margin-left:20px;
 }
 @media (max-width: 566px){
@@ -183,11 +278,16 @@ min-width:80%;
 	display: inline-block;
 }
 
-.info-itens h4{
+#especialidades .info-itens h4{
 	color: #FEEB66;
 	font-weight:900;
 	padding:6px 0px;
 	font-size: 16px;
+}
+
+.info-itens h5{
+	text-transform: uppercase;
+	font-weight:900;
 }
 
 .info-itens p{
@@ -223,4 +323,73 @@ min-width:80%;
 	opacity: 0.9;
 	z-index: -99;
 	background-image: linear-gradient(to top,rgba(0,0,0,0.9) 0px,rgba(0,0,0,0.8) 35%,rgba(0,0,0,0.2) 75%, transparent 100%);
+}
+
+.informacoes{
+	position: relative;
+	clear: both;
+	width: 100%;
+	height: auto;
+	color: #fff;
+	text-align: justify;
+	padding-top:20px;
+}
+
+#contato{
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.94);
+	z-index: 30;
+}
+
+#contato, .wrap-item{
+	text-align: center;
+}
+
+#contato .titulo{
+	padding-top: 30px;
+	color: rgb(1, 33, 42);
+}
+
+.contato-itens{
+	padding-top: 0px;
+	padding-bottom: 40px;
+}
+
+#contato .info-itens{
+	color: #999999;
+	text-align: justify;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+}
+
+#contato h4{
+	font-weight: 900;
+	color: #F9690E;
+}
+
+#contato p{
+	text-align: center;
+}
+
+#contato .image-item{
+	text-align: center;
+	width: auto;
+	border-style: dashed;
+	border-color: #F9690E;
+	padding: 4px;
+}
+
+.info-item, .image-item{
+	display: inline-block;
+}
+
+#direitos{
+	background-color: #F9690E;
+	color: #fff;
+	text-align: center;
+}
+
+#direitos, .info-itens{
+	padding-top: 10px;
 }
